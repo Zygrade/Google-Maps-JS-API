@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Google Maps JS API</title>
+
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <style>
+    #map{
+      height : 400px;
+      width : 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <br>
+  <div class="container fluid">
+    <h3 class="display-4" style="text-align:center">Google Maps Javascript API</h3>
+    <br>
+    <p class="lead">Click anywhere to mark a location && Click on the marker to see location's (LAT,LNG)</p>
+  </div>
+
+  <div id="map" class="container"></div>
+  <br><br>
+
+  <div class="container">
+    <input type="button" id="hide" value="Hide Markers" class="btn btn-primary">
+    <input type="button" id="show" value="Unhide Markers" class="btn btn-success align-center">
+    <input type="button" id="delete" value="Delete Markers" class="btn btn-danger align-right">
+  </div>
+
+  <script type="text/javascript" src="./index.js"></script>
+
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdFMvbKkTg5CkrFhxO4KKJhoK0g1ioQLc&callback=initMap" async defer></script>
+
+</body>
+</html>
